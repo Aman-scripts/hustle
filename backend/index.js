@@ -9,6 +9,10 @@ app.get("",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.send("Hello World! from about page")
 })
+
+app.get("/contact",(res,req)=>{
+    res.send("Hello World! from contact page")
+})
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`)
 })
